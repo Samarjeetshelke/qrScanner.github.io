@@ -22,9 +22,13 @@
     </style>
 </head>
 <body>
-    <main>
+    <main style="display: flex;">
         <div id="reader"></div>
         <div id="result"></div>
+        <div id="sam">
+            
+            Hi
+        </div>
     </main>    
 
     <script>
@@ -44,7 +48,7 @@
     
         function success(result) {
     
-            document.getElementById('result').innerHTML = `
+            document.getElementById('sam').innerHTML = `
             <h2>Success!</h2>
             <p><a href="${result}">${result}</a></p>
             `;
@@ -53,7 +57,7 @@
             scanner.clear();
             // Clears scanning instance
     
-           // document.getElementById('reader').remove();
+            //document.getElementById('reader').remove();
             // Removes reader element from DOM since no longer needed
         
         }
