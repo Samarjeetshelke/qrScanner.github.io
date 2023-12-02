@@ -22,10 +22,10 @@
     </style>
 </head>
 <body>
-    <main>
+    <main style="display:flex;">
         <div id="reader">
 
-            <div id="resultx"></div>
+            <div id="result"></div>
         </div>
         
     </main>    
@@ -47,7 +47,7 @@
     
         function success(result) {
     
-            document.getElementById('resultx').innerHTML = `
+            document.getElementById('result').innerHTML = `
             <h2>Success!</h2>
             <p><a href="${result}">${result}</a></p>
             `;
