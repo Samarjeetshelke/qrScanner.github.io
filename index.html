@@ -23,8 +23,11 @@
 </head>
 <body>
     <main>
-        <div id="reader"></div>
-        <div id="result"></div>
+        <div id="reader">
+
+            <div id="resultx"></div>
+        </div>
+        
     </main>    
 
     <script>
@@ -44,16 +47,16 @@
     
         function success(result) {
     
-            document.getElementById('result').innerHTML = `
+            document.getElementById('resultx').innerHTML = `
             <h2>Success!</h2>
             <p><a href="${result}">${result}</a></p>
             `;
             // Prints result as a link inside result element
     
-            scanner.clear();
+            //scanner.clear();
             // Clears scanning instance
     
-            document.getElementById('reader').remove();
+            //document.getElementById('reader').remove();
             // Removes reader element from DOM since no longer needed
         
         }
